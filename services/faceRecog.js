@@ -45,7 +45,9 @@ const compareFacesAndLiveliness = async (selfiePath, documentPath) => {
       "Error comparing faces and checking liveliness:",
       error.message
     );
-    throw new Error("Face comparison or liveliness check failed");
+    throw new Error(
+      "Face comparison or liveliness check failed" + error.message
+    );
   }
 };
 
